@@ -5,10 +5,10 @@ import Header from '../Header/Header';
 
 const App = () => {
   return (
-    <div>
+    <main>
       <Header />
       <h1>Natalie's Portfolio Content</h1>
-    </div>
+    </main>
   )
 }
 

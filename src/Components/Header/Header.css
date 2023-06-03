@@ -1,4 +1,11 @@
 .header {
+  padding: 5% 5% 0% 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
   font-family: 'PT Mono', monospace;
   margin: 0;
   text-align: center;

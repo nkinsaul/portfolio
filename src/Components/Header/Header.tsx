@@ -7,7 +7,6 @@ const Header = () => {
   return (
     <header className="header">
       <img src={logoNK} />
-      {/* <h1 className="logo">NK</h1> */}
       <NavBar />
     </header>
   )

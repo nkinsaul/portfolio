@@ -1,9 +1,15 @@
 import React from "react";
 import './Header.css'
+import NavBar from "../NavBar/NavBar";
+import logoNK from '../../images/logoNK.png'
 
 const Header = () => {
   return (
-    <h1 className="header">Natalie's Portfolio Site</h1>
+    <header className="header">
+      <img src={logoNK} />
+      {/* <h1 className="logo">NK</h1> */}
+      <NavBar />
+    </header>
   )
 }
 

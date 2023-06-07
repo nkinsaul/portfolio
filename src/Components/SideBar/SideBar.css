@@ -1,0 +1,9 @@
+.side-bar {
+  background: black;
+  color: white;
+  text-align: left;
+  height: 100%;
+  width: 18%;
+  border-radius: 10px;
+  padding-left: 2%;
+}

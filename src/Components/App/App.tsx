@@ -1,14 +1,18 @@
 import React from 'react';
 import './App.css';
 import Header from '../Header/Header';
+import SideBar from '../SideBar/SideBar';
 
 
 const App = () => {
   return (
-    <main>
+    <body>
       <Header />
-      <h1>Natalie's Portfolio Content</h1>
-    </main>
+      <main>
+        <SideBar />
+        <h1>Natalie's Portfolio Content</h1>
+      </main>
+    </body>
   )
 }
 

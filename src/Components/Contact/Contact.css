@@ -1,0 +1,18 @@
+.form {
+  width: 50%;
+  margin-right: 4em;
+}
+
+.form-inputs {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.name, .email {
+  height: 2.5%;
+}
+
+.message {
+  height: 50%;
+}

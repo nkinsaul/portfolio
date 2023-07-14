@@ -1,4 +1,6 @@
-.form {
+.contact-form {
+  display: flex;
+  flex-direction: column;
   width: 50%;
   margin-right: 4em;
 }
@@ -9,10 +11,12 @@
   flex-direction: column;
 }
 
-.name, .email {
-  height: 2.5%;
+.name, .email .message{
+  width: 100%;
+  margin: 0;
 }
 
-.message {
-  height: 50%;
+.submit {
+  width: 50%;
+  align-self: center;
 }

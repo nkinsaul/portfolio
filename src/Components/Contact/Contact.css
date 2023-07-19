@@ -26,9 +26,16 @@
   align-self: center;
 }
 
+@media screen and (max-width: 900px) {
+  .contact-form {
+    width: 100%;
+    margin: 0;
+  }
+}
+
 @media screen and (max-width: 400px) {
   .contact-form {
-    width: 80%;
+    width: 100%;
     margin: 0;
   }
 }

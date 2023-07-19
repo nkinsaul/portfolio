@@ -7,3 +7,29 @@
   border-radius: 10px;
   padding-left: 2%;
 }
+
+.side-bar > ul > li {
+  padding: 5%
+}
+
+@media screen and (max-width: 900px) {
+  .side-bar {
+    width: 30%;
+  }
+  .side-bar > ul {
+    margin: 10%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .side-bar {
+    width: 40%;
+    font-size: .5em;
+    margin: 0;
+  }
+  .side-bar > ul {
+    margin: 0;
+    padding: 0;
+  }
+}

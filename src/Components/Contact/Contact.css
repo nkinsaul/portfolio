@@ -1,0 +1,41 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-right: 4em;
+}
+
+.form-inputs {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.name, .email, .message, .submit{
+  font-family: 'PT Mono', monospace;
+  width: 100%;
+  margin: 1%;
+}
+
+.message {
+  height: 50%;
+}
+
+.submit {
+  width: 50%;
+  align-self: center;
+}
+
+@media screen and (max-width: 900px) {
+  .contact-form {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .contact-form {
+    width: 100%;
+    margin: 0;
+  }
+}

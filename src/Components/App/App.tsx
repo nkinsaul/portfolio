@@ -14,7 +14,6 @@ const App = () => {
     <div className='App'>
       <Header />
       <main>
-        <SideBar />
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/audio" element={<Audio />} />

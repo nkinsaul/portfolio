@@ -4,24 +4,24 @@ import emailjs from '@emailjs/browser';
 
 const Contact = () => {
 
-  const form = useRef<any>(null);
+  const form = useRef<HTMLFormElement>(null);
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
   const sendEmail = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
+    event.preventDefault()
     
-    emailjs.sendForm('service_w30o2kn', 'template_g7f0cpy', form.current, 'EDNmkzdT1UstQ_ELu')
-    .then((result) => {
-      console.log(result.text);
-    }, (error) => {
-      console.log(error.text)
-    })
+    if (form.current) {
+      emailjs.sendForm('service_w30o2kn', 'template_g7f0cpy', form.current, 'EDNmkzdT1UstQ_ELu')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text)
+      })
+    }
   }
-
-  
 
   return (
     
@@ -59,43 +59,3 @@ const Contact = () => {
 }
 
 export default Contact;
-
-
-
-
-
-
-// <form className="form">
-    //   <h1>Please Reach Out!</h1>
-    //   <div className="form-inputs">
-    //     <input 
-    //       className="name"
-    //       type="text"
-    //       name="user_name"
-    //       placeholder="Name"
-    //       value={name}
-    //       onChange={e => setName(e.target.value)}
-    //     />
-    //     <input 
-    //       className="email"
-    //       type="text"
-    //       name="email"
-    //       placeholder="Email"
-    //       value={email}
-    //       onChange={e => setEmail(e.target.value)}
-    //     />
-    //     <input 
-    //       className="message"
-    //       type="text"
-    //       name="message"
-    //       placeholder="Message"
-    //       value={message}
-    //       onChange={e => setMessage(e.target.value)}
-    //     />
-    //     <input 
-    //       type="hidden"
-    //       name="contact_number"
-    //       value={contactNumber}
-    //     />
-    //   </div>
-    // </form>

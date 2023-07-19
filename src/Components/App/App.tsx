@@ -1,4 +1,3 @@
-;
 import './App.css';
 import Header from '../Header/Header';
 import SideBar from '../SideBar/SideBar';
@@ -12,7 +11,7 @@ import { Route, Routes } from 'react-router-dom';
 const App = () => {
 
   return (
-    <body>
+    <div className='App'>
       <Header />
       <main>
         <SideBar />
@@ -23,7 +22,8 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
-    </body>
+    </div>
+    
   )
 }
 

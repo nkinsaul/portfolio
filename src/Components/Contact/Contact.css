@@ -11,9 +11,14 @@
   flex-direction: column;
 }
 
-.name, .email .message{
+.name, .email, .message, .submit{
+  font-family: 'PT Mono', monospace;
   width: 100%;
-  margin: 0;
+  margin: 1%;
+}
+
+.message {
+  height: 50%;
 }
 
 .submit {

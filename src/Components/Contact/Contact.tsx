@@ -1,34 +1,71 @@
-import { useState, useRef } from "react";
+import React, { useState, useRef, FormEvent } from "react";
 import "./Contact.css"
-import { init, sendForm } from 'emailjs-com';
-init('service_w30o2kn'); 
+import emailjs from '@emailjs/browser'; 
 
 const Contact = () => {
+
+  const form = useRef<any>(null);
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [contactNumber, setContactNumber] = useState("");
 
-  const generateContactNumber = () => {
-    const numStr = "000000" + (Math.random() * 1000000 | 0);
-    setContactNumber(numStr.substring(numStr.length - 6));
+  const sendEmail = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    
+    emailjs.sendForm('service_w30o2kn', 'template_g7f0cpy', form.current, 'EDNmkzdT1UstQ_ELu')
+    .then((result) => {
+      console.log(result.text);
+    }, (error) => {
+      console.log(error.text)
+    })
   }
 
+  
+
   return (
-    <form className='contact-form'>
-      <input type='text' name='user_name' placeholder='Name' className="name" />
-      <input type='email' name='user_email' placeholder='Email' className="email"/>
-      <textarea name='message' placeholder='Message' className="message"/>
-      <input type='submit' value='Send' className="submit"/>
-    </form>
-
-
-
-
-
     
-    // <form className="form">
+    <form 
+      className='contact-form' 
+      onSubmit={event => sendEmail(event)}
+      ref={form}>
+      <input 
+        name='user_name'
+        type='text'  
+        placeholder='Name' 
+        className="name" 
+        value={name} 
+        onChange={e => setName(e.target.value)}/>
+      <input 
+        name='user_email'
+        type='email'  
+        placeholder='Email' 
+        className="email"
+        value={email}
+        onChange={e => setEmail(e.target.value)}/>
+      <textarea 
+        name="message"
+        placeholder='Message' 
+        className="message"
+        value={message}
+        onChange={e => setMessage(e.target.value)}/>
+      <input 
+        type='submit' 
+        value='Send' 
+        className="submit"/>
+    </form>
+    
+  )
+}
+
+export default Contact;
+
+
+
+
+
+
+// <form className="form">
     //   <h1>Please Reach Out!</h1>
     //   <div className="form-inputs">
     //     <input 
@@ -62,7 +99,3 @@ const Contact = () => {
     //     />
     //   </div>
     // </form>
-  )
-}
-
-export default Contact;

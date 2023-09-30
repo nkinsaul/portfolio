@@ -1,5 +1,13 @@
 .landing {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  height: 38%;
 }

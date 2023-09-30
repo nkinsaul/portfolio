@@ -27,7 +27,11 @@ const Contact = () => {
     
     <form 
       className='contact-form' 
-      onSubmit={event => sendEmail(event)}
+      onSubmit={event => {
+        setMessage("")
+        setName("")
+        setEmail("")
+        sendEmail(event)}}
       ref={form}>
       <input 
         name='user_name'

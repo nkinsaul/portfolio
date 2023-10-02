@@ -7,6 +7,7 @@ import listenUp3 from "../../images/lu_ss_3.svg"
 import listenUp4 from "../../images/lu_ss_4.svg"
 import brewBeat1 from '../../images/bb_ss_1.svg'
 import brewBeat2 from '../../images/bb_ss_2.svg'
+import tech from '../../images/tech_3-09.svg'
 
 const Landing = () => {
 
@@ -16,8 +17,12 @@ const Landing = () => {
       <div className="main-content">
         <div className="proj-cont">
           <h1>Listen Up!</h1>
-          <p>ListenUp is an application where users are given a random sound and have to guess what it is. The app offers different categories of sounds such as animals, musical instruments, machines, & miscellaneous. A user then has the option to select a difficulty which determines how many times a sound can be replayed before a guess must be submit. After finishing the game, a score is computed based on the number of correct answers, which is then added to the all-time leaderboard. </p>
-          <p>This app was a collaboration with 7 other devlopers: Matt Rowan, Angie Wirth, Bob Aiken, Ryan Canton, Samuel Cox, Joe King, and Zac Walters.</p>
+          <div className="links">
+            <a href="https://listenup-game.herokuapp.com/">Deployed Link</a>
+            <a href="https://github.com/Listen-Up-2210/listen-up-ui">GitHub</a>
+          </div>
+          <p><strong>ListenUp</strong> is a <strong>web application</strong> where users are given a random <strong>sound</strong> and have to guess what it is. This game was developed to help improve users listening skills through fun and interesting sounds.  For my part on this project, I focused on <strong>game play</strong> and <strong>animations</strong>.</p>
+          <p>This app was a collaboration with 7 other devlopers: Matt Rowan, Angie Wirth, Bob Aiken, Ryan Canton, Samuel Cox, Joe King, and Zac Walters.  It was built using <strong>React</strong>, <strong>Ruby on Rails</strong>,  <strong> GraphQL</strong>, and <strong>Cypress</strong> for EDE testing.</p>
           <div className="image-cont">
             <div className="ss-cont">
               <h2>Choose a Category</h2>
@@ -37,6 +42,10 @@ const Landing = () => {
                 <h2>Dark Mode</h2>
                 <img className="screen-shots"src={listenUp4} />
               </div>
+          </div>
+          <div>
+            <h2>Technologies</h2>
+            <img className="tech" src={tech}/>
           </div>
         </div>
         <div className="proj-cont">

@@ -2,6 +2,7 @@
 import './SideBar.css'
 
 const SideBar = () => {
+
   return (
     <div className="side-bar">
      <h1 className="sidebar-header">Projects</h1>

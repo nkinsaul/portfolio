@@ -1,0 +1,18 @@
+{
+  "projects": [
+    {
+      "name": "Listen Up!",
+      "description": "A guessing game where a user is given a sound and has to guess what it is.",
+      "technologies": "React, JS, GraphQL"
+    },
+    {
+      "name": "Brew Beats",
+      "description": "Allows a user to view music events and see what breweries are near the venue.",
+      "technologies": "React, JS, Restful APIs"
+    }, {
+      "name": "Rancid Tomatillos",
+      "description": "Allows a user to learn details about different films",
+      "technologies": "React, JS, React Router"
+    }
+  ]
+}

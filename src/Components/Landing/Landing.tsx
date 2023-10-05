@@ -16,7 +16,6 @@ const Landing = () => {
 
   return (
     <div className="landing">
-      <SideBar />
       <div className="main-content">
         <div className="proj-cont">
           <h1 id="listen-up">Listen Up!</h1>

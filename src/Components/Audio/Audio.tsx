@@ -1,26 +1,40 @@
 import React from "react";
 import projects from "../../projects/projects.json"
+import Project from "../Project/Project";
+import './Audio.css'
+import luimage from '../../images/lu_ss_1.svg'
 
 const Audio = () => {
 
-  const myProjects = (projects: {name: string, description: string, technologies: string}[]) => {
-    return projects.map((project, index) =>  (
-        <div key={index}>
-          <h1>{project.name}</h1>
-          <p>{project.description}</p>
-          <p>{project.technologies}</p>
+  const myProjects = (projects: {name: string, description: string, technologies: string, link?: string, repo: string, image: string}[]) => {
+    return projects.map((project, index) => {
+      return (
+        <div key={index} className="project index">
+          <div className="project-inner">
+            <div className="project-front">
+              <img src={project.image} alt={project.name}/>
+            </div>
+            <div className="project-back">
+              <h2>{project.name}</h2>
+              <p>{project.description}</p>
+              <p>{project.technologies}</p>
+              <div className="links">
+                {project.link && <a href={project.link}>Demo</a>}
+                <a href={project.repo}>Repo</a>
+              </div>
+            </div>
+          </div>
         </div>
-      )
+      )}
     )
   }
 
   return (
-    <div>
-      <h1>Projects</h1>
-      <div>
+    <div className="projects-main">
+      <h1 className="title">PROJECTS</h1>
+      <div className="projects-container">
         {myProjects(projects.projects)}
       </div>
-        
     </div>
   )
 }

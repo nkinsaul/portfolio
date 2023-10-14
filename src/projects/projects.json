@@ -1,0 +1,50 @@
+{
+  "projects": [
+    {
+      "name": "Listen Up!",
+      "description": "A guessing game where a user is given a sound and has to guess what it is.",
+      "technologies": "React, JS, GraphQL, Ruby on Rails",
+      "link": "https://listenup-game.herokuapp.com/",
+      "repo": "https://github.com/Listen-Up-2210/listen-up-ui",
+      "image": "/images/listen_up_resample.svg"
+    },
+    {
+      "name": "Brew Beats",
+      "description": "Allows a user to view music events and see what breweries are near the venue.",
+      "technologies": "React, JS, Restful APIs",
+      "link": "https://brew-beats.vercel.app/",
+      "repo": "https://github.com/nkinsaul/tunes-and-brews",
+      "image": "/images/brew_beats_resample.svg"
+    }, 
+    {
+      "name": "New York Times App",
+      "description": "This app built for a 2-hour hackathon challenge uses NYT APIs to show a user the latest news",
+      "technologies": "React, React Router",
+      "repo": "https://github.com/nkinsaul/nyt-app",
+      "image": "/images/nyt_app.svg"
+    },
+    {
+      "name": "Rancid Tomatillos",
+      "description": "Allows a user to learn details about different films",
+      "technologies": "React, JS, React Router",
+      "link": "https://rancid-tomatillos-sable.vercel.app/",
+      "repo": "https://github.com/nkinsaul/Rancid-Tomatillos",
+      "image":"/images/rancid_tomatillos.svg"
+
+    },
+    {
+      "name":"Health Dash",
+      "description":"Tracks a users health and fitness data.",
+      "technologies":"JavaScript ES6, Node, Mocha/Chai",
+      "repo":"https://github.com/nkinsaul/HealthDash",
+      "image": "images/health_dash.svg"
+    },
+    {
+      "name": "Travel Tracker",
+      "description":"Allows a user to view and book trips.",
+      "technologies": "JavaScript ES6, Node, Mocha/Chai",
+      "repo":"https://github.com/nkinsaul/TravelTracker",
+      "image":"images/travel_tracker.svg"
+    }
+  ]
+}

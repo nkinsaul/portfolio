@@ -1,15 +1,26 @@
-body, .App {
-  font-family: 'PT Mono', monospace;
+html, body, .App {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
   width: 100%;
-  height: 100%;
   text-align: center;
   margin: 0;
+  background-color: black;
+  color: white;
 }
 
 main {
-  height: 100%;
-  padding: 3% 7% 0% 6.5%;
+  width: 100vw;
+  /* padding: 3% 7% 3% 6.5%; */
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color:rgb(255, 195, 0)
 }

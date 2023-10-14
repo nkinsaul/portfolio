@@ -6,7 +6,6 @@ import logoNK from '../../images/logoNK.png'
 const Header = () => {
   return (
     <header className="header">
-      <img src={logoNK} />
       <NavBar />
     </header>
   )

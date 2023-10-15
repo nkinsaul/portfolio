@@ -1,10 +1,10 @@
 import React from "react";
 import projects from "../../projects/projects.json"
 import Project from "../Project/Project";
-import './Audio.css'
+import './Projects.css'
 import luimage from '../../images/lu_ss_1.svg'
 
-const Audio = () => {
+const Projects = () => {
 
   const myProjects = (projects: {name: string, description: string, technologies: string, link?: string, repo: string, image: string}[]) => {
     return projects.map((project, index) => {
@@ -39,4 +39,4 @@ const Audio = () => {
   )
 }
 
-export default Audio
+export default Projects

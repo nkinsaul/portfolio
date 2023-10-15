@@ -15,12 +15,12 @@ const Audio = () => {
               <img src={project.image} alt={project.name}/>
             </div>
             <div className="project-back">
-              <h2>{project.name}</h2>
-              <p>{project.description}</p>
-              <p>{project.technologies}</p>
+              <h2>{project.name.toUpperCase()}</h2>
+              <p>{project.description.toUpperCase()}</p>
+              <p>{project.technologies.toUpperCase()}</p>
               <div className="links">
-                {project.link && <a href={project.link}>Demo</a>}
-                <a href={project.repo}>Repo</a>
+                {project.link && <a href={project.link}>DEMO</a>}
+                <a href={project.repo}>REPO</a>
               </div>
             </div>
           </div>

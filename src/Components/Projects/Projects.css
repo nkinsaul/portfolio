@@ -48,7 +48,6 @@
 
 .project-front {
   box-sizing: border-box;
-  /* padding: 1%; */
   border-radius: 2px;
   background-repeat: no-repeat;
   background-size:auto;
@@ -57,7 +56,8 @@
 
 .project-front > img {
   height: 100%;
-  border: 1.5px solid rgb(255, 255, 255, 0.355);
+  border: 1.5px solid rgba(255, 255, 255, 0.355);
+  border-radius: 5px;
 }
 
 .project-back {

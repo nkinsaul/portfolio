@@ -25,7 +25,7 @@
     },
     {
       "name": "Rancid Tomatillos",
-      "description": "Allows a user to learn details about different films",
+      "description": "Allows a user to learn details about their favorite films",
       "technologies": "React, JS, React Router",
       "link": "https://rancid-tomatillos-sable.vercel.app/",
       "repo": "https://github.com/nkinsaul/Rancid-Tomatillos",

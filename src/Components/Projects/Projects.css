@@ -1,6 +1,6 @@
 .title {
   margin-bottom: 5%;
-  letter-spacing: .5em;
+  letter-spacing: .6em;
 }
 
 .projects-main {
@@ -48,26 +48,60 @@
 
 .project-front {
   box-sizing: border-box;
-  /* border: 1px solid white; */
-  border-radius: 10px;
+  border-radius: 2px;
   background-repeat: no-repeat;
   background-size:auto;
   background-position: center;
 }
 
+.project-front > img {
+  height: 100%;
+  border: 1.5px solid rgba(255, 255, 255, 0.355);
+  border-radius: 5px;
+}
+
 .project-back {
   transform: rotateY(180deg);
-  /* style the back side, e.g., centering the text, setting background colors */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgb(255, 255, 255, 0.355);
+  border-radius: 5px;
   color: white;
+  box-sizing: border-box;
+  padding: 2% 4% 2% 4%;
 }
 
 .links {
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
+  margin-top: 4%;
+}
+
+.links > a {
+  color:rgb(255, 195, 0);
+  letter-spacing: .5em;
+  transition: all .2s ease-in;
+}
+
+.links > a:hover {
+  letter-spacing: .2em;
+}
+
+.project-back > h2 {
+  color: rgb(255, 195, 0);
+  letter-spacing: .1em;
+  margin: .3em;
+  font-size: 1.8em;
+}
+
+.project-back > p {
+  font-size: .9em;
+  margin: .3em;
+  letter-spacing: .1em;
+  text-align: center;
 }
 

@@ -20,3 +20,20 @@ a:hover {
   color: rgb(38, 70, 83);
 }
 
+@media screen and (max-width: 1200px) {
+  .navbar {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .navbar {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .navbar {
+    width: 100%;
+  }
+}

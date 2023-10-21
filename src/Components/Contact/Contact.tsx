@@ -55,7 +55,7 @@ const Contact = () => {
         onChange={e => setMessage(e.target.value)}/>
       <input 
         type='submit' 
-        value='Send' 
+        value='SEND' 
         className="submit"/>
     </form>
     

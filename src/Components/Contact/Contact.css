@@ -1,8 +1,9 @@
 .contact-form {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
   margin-right: 4em;
+  align-items: center;
 }
 
 .form-inputs {
@@ -11,31 +12,40 @@
   flex-direction: column;
 }
 
-.name, .email, .message, .submit{
-  font-family: 'PT Mono', monospace;
-  width: 100%;
+.name, .email, .message {
+  font-family: 'Raleway', sans-serif;
   margin: 1%;
+  width: 50%;
 }
 
 .message {
-  height: 50%;
+  height: 23rem;
 }
 
 .submit {
-  width: 50%;
+  width: 20%;
   align-self: center;
+  background-color: rgba(38, 70, 83);
+  border: rgb(42, 157, 143) 1px solid;
+  border-radius: 3px;
+  padding: .5em;
+  color:white;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: .4em;
+  transition: all .2s ease-in;
 }
+
+.submit:hover {
+  background-color: rgb(233, 196, 106);
+  color: rgb(38, 70, 83);
+  border: rgb(38, 70, 83) 1px solid;
+  letter-spacing: .6em;
+}
+
 
 @media screen and (max-width: 900px) {
   .contact-form {
-    width: 100%;
-    margin: 0;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .contact-form {
-    width: 100%;
+    width: 90%;
     margin: 0;
   }
 }

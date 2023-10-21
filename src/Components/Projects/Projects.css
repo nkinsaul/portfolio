@@ -5,8 +5,6 @@
 }
 
 .projects-main {
-  /* height: 100%;
-  width: 100%; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,7 +12,6 @@
 }
 
 .projects-container {
-  /* height: 100%; */
   width: 100%;
   box-sizing: border-box;
   display: grid;
@@ -51,6 +48,7 @@
     left: 0;
     width: 100%;
     height: 100%;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.189);
 }
 
 .project-front {
@@ -63,7 +61,7 @@
 
 .project-front > img {
   height: 100%;
-  border: 1.5px solid rgba(255, 255, 255, 0.355);
+  border: 1.5px solid rgba(255, 255, 255, 0.152);
   border-radius: 5px;
 }
 
@@ -90,12 +88,12 @@
 
 .links > a {
   color:rgb(233, 196, 106);
-  letter-spacing: .5em;
+  letter-spacing: .4em;
   transition: all .2s ease-in;
 }
 
 .links > a:hover {
-  letter-spacing: .2em;
+  letter-spacing: .6em;
 }
 
 .project-back > h2 {

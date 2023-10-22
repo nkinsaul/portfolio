@@ -12,9 +12,9 @@ import { Route, Routes } from 'react-router-dom';
 const App = () => {
 
   return (
-    <div className='App'>
-      <Header />
+    // <div className='App'>
       <main>
+        <Header />
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/projects" element={<Projects />} />
@@ -22,7 +22,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
-    </div>
+    // </div>
     
   )
 }

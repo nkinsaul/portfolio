@@ -11,11 +11,29 @@ a {
   font-size: .8em;
   text-decoration: none;
   font-weight: 600;
-  letter-spacing: .3em;
+  letter-spacing: .2em;
   transition: all .2s ease-in;
 }
 
 a:hover {
-  letter-spacing: .2em;
+  letter-spacing: .3em;
+  color: rgb(233, 196, 106);
 }
 
+@media screen and (max-width: 1200px) {
+  .navbar {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .navbar {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .navbar {
+    width: 100%;
+  }
+}

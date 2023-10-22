@@ -24,7 +24,7 @@
   align-items: center;
 }
 
-.about-section > .about > .about-me > p {
+.about-me > p {
   width: 100%;
   font-size: 1.3em;
   letter-spacing: .2em;
@@ -51,4 +51,59 @@
 .bar-chart > h2 {
   letter-spacing: .5em;
   font-size: 2em;
+}
+
+@media screen and (max-width: 1200px) {
+  .about {
+    width: 100%;
+  }
+  .chart {
+    width: 80%;
+  }
+  .about-me {
+    width: 50%;
+  }
+  .about-me > p {
+    letter-spacing: normal;
+    line-height: 1.4em;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .chart {
+    width: 85%;
+  }
+  .about {
+    width: 90%;
+  }
+  .about > img {
+    height: 25em;
+  }
+  .about-me {
+    width: 50%;
+  }
+  .about-me > p {
+    font-size: 1.1em;
+    letter-spacing: normal;
+  }
+  /* .chart canvas {
+    height: 500px !important;
+  } */
+}
+
+@media screen and (max-width: 750px) {
+  .chart {
+    width: 96%;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about > img {
+    width: 18em;
+  }
+  .about-me {
+    width: 95%;
+  }
 }

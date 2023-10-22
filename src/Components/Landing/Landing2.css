@@ -1,13 +1,26 @@
 .intro {
   margin-top: 10%;
-  width: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .intro > h1 {
+  margin-top: 7%;
   letter-spacing: .2em;
-  text-align: center;
+  text-align: justify;
+  text-align-last: center;
+  width: 75%;
 }
 
-.name {
+.my-name {
   color: rgb(233, 196, 106);
+}
+
+@media screen and (max-width: 650px) {
+  .intro > h1 {
+    font-size: 1.5em;
+    letter-spacing: .1em;
+  }
 }

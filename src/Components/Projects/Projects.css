@@ -132,7 +132,7 @@
 
 @media screen and (max-width: 900px) {
   .links > a:hover {
-    letter-spacing: normal;
+    letter-spacing: .4em;
   }
 }
 

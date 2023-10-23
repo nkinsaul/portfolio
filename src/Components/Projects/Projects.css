@@ -130,6 +130,12 @@
   }
 }
 
+@media screen and (max-width: 900px) {
+  .links > a:hover {
+    letter-spacing: normal;
+  }
+}
+
 @media screen and (max-width: 621px) {
   .project {
     height: 145px;

@@ -14,8 +14,10 @@
 .contact-page > p {
   font-size: 1.2em;
   width: 40%;
-  letter-spacing: .2em;
+  letter-spacing: 0.5em;
   line-height: 1.4em;
+  text-align: justify;
+  text-align-last: center;
   justify-content: center;
 }
 
@@ -60,9 +62,27 @@
 }
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   .contact-form {
     width: 90%;
     margin: 0;
+  }
+  .name, .email, .message, .submit {
+    width: 75%;
+  } 
+  .contact-page > p {
+    width: 75%;
+    letter-spacing: 0.06em;
+    margin-top: 5%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .name, .email, .message, .submit {
+    width: 100%;
+  } 
+  .contact-page > p {
+    width: 90%;
+    letter-spacing: 0.06em;
   }
 }

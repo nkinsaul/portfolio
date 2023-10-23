@@ -101,7 +101,8 @@
     align-items: center;
   }
   .about > img {
-    width: 18em;
+    width: 15em;
+    height: 20em;
   }
   .about-me {
     width: 95%;

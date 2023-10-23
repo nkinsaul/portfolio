@@ -142,4 +142,7 @@
   .title {
     padding-left: 4%;
   }
+  .links > a:hover {
+    letter-spacing: normal;
+  }
 }

@@ -40,6 +40,10 @@
   transform: rotateY(180deg);
 }
 
+.project:hover .project-back {
+  z-index: 2;
+}
+
 .project-front,
 .project-back {
     backface-visibility: hidden;
@@ -131,6 +135,9 @@
 }
 
 @media screen and (max-width: 900px) {
+  .links > a {
+    font-size: 1em;
+  }
   .links > a:hover {
     letter-spacing: .4em;
   }

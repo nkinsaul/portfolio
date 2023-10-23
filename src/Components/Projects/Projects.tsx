@@ -1,8 +1,6 @@
 import React from "react";
 import projects from "../../projects/projects.json"
-import Project from "../Project/Project";
 import './Projects.css'
-import luimage from '../../images/lu_ss_1.svg'
 
 const Projects = () => {
 
